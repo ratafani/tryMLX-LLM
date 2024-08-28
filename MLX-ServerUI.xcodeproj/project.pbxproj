@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F69F15B62C7E2B2600DB8623 /* MLX_ServerUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F15B52C7E2B2600DB8623 /* MLX_ServerUIApp.swift */; };
+		F69F15B82C7E2B2600DB8623 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F15B72C7E2B2600DB8623 /* ContentView.swift */; };
+		F69F15BA2C7E2B2700DB8623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69F15B92C7E2B2700DB8623 /* Assets.xcassets */; };
+		F69F15BD2C7E2B2700DB8623 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69F15BC2C7E2B2700DB8623 /* Preview Assets.xcassets */; };
+		F69F15CB2C7E2B7A00DB8623 /* RouteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F15CA2C7E2B7A00DB8623 /* RouteService.swift */; };
+		F69F15CD2C7E2D8400DB8623 /* NetworkRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F15CC2C7E2D8400DB8623 /* NetworkRoute.swift */; };
+		F69F15CF2C7E2D9C00DB8623 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F15CE2C7E2D9C00DB8623 /* NetworkService.swift */; };
+		F69F15D12C7E2DAA00DB8623 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F15D02C7E2DAA00DB8623 /* NetworkManager.swift */; };
+		F69F15D32C7E2F1000DB8623 /* LLMResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F15D22C7E2F1000DB8623 /* LLMResponse.swift */; };
+		F69F15D52C7E2F6F00DB8623 /* LLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F15D42C7E2F6F00DB8623 /* LLMService.swift */; };
+		F69F15D72C7E2F9B00DB8623 /* LLMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F15D62C7E2F9B00DB8623 /* LLMManager.swift */; };
+		F69F15DC2C7E303400DB8623 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F15DB2C7E303400DB8623 /* MainViewModel.swift */; };
+		F69F15DE2C7E466E00DB8623 /* LLMStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F15DD2C7E466E00DB8623 /* LLMStream.swift */; };
+		F69F15FA2C7ED5B000DB8623 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = F69F15F92C7ED5B000DB8623 /* ArgumentParser */; };
+		F69F15FC2C7ED5B000DB8623 /* generate-manual in Frameworks */ = {isa = PBXBuildFile; productRef = F69F15FB2C7ED5B000DB8623 /* generate-manual */; };
+		F69F15FF2C7ED5F500DB8623 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = F69F15FE2C7ED5F500DB8623 /* MarkdownUI */; };
+		F69F16022C7ED79200DB8623 /* LLama.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F16012C7ED79200DB8623 /* LLama.swift */; };
+		F69F16042C7ED7C200DB8623 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F16032C7ED7C200DB8623 /* Config.swift */; };
+		F69F16062C7ED7F600DB8623 /* LLMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F16052C7ED7F600DB8623 /* LLMModel.swift */; };
+		F69F16092C7ED82000DB8623 /* Transformers in Frameworks */ = {isa = PBXBuildFile; productRef = F69F16082C7ED82000DB8623 /* Transformers */; };
+		F69F160B2C7ED8A900DB8623 /* Lora.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F160A2C7ED8A900DB8623 /* Lora.swift */; };
+		F69F16192C7ED97A00DB8623 /* MLX in Frameworks */ = {isa = PBXBuildFile; productRef = F69F16182C7ED97A00DB8623 /* MLX */; };
+		F69F161B2C7ED97A00DB8623 /* MLXFFT in Frameworks */ = {isa = PBXBuildFile; productRef = F69F161A2C7ED97A00DB8623 /* MLXFFT */; };
+		F69F161D2C7ED97A00DB8623 /* MLXFast in Frameworks */ = {isa = PBXBuildFile; productRef = F69F161C2C7ED97A00DB8623 /* MLXFast */; };
+		F69F161F2C7ED97A00DB8623 /* MLXLinalg in Frameworks */ = {isa = PBXBuildFile; productRef = F69F161E2C7ED97A00DB8623 /* MLXLinalg */; };
+		F69F16212C7ED97A00DB8623 /* MLXNN in Frameworks */ = {isa = PBXBuildFile; productRef = F69F16202C7ED97A00DB8623 /* MLXNN */; };
+		F69F16232C7ED97A00DB8623 /* MLXOptimizers in Frameworks */ = {isa = PBXBuildFile; productRef = F69F16222C7ED97A00DB8623 /* MLXOptimizers */; };
+		F69F16252C7ED97A00DB8623 /* MLXRandom in Frameworks */ = {isa = PBXBuildFile; productRef = F69F16242C7ED97A00DB8623 /* MLXRandom */; };
+		F69F16292C7ED9F900DB8623 /* LLMEvalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F16282C7ED9F900DB8623 /* LLMEvalViewModel.swift */; };
+		F69F162C2C7EDA7000DB8623 /* LLMEvalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F162B2C7EDA7000DB8623 /* LLMEvalView.swift */; };
+		F69F162E2C7EDA9C00DB8623 /* models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F162D2C7EDA9C00DB8623 /* models.swift */; };
+		F69F16302C7EDABA00DB8623 /* Evaluate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F162F2C7EDABA00DB8623 /* Evaluate.swift */; };
+		F69F16322C7EDBBD00DB8623 /* Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F16312C7EDBBD00DB8623 /* Load.swift */; };
+		F69F16342C7EDBD300DB8623 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F16332C7EDBD300DB8623 /* Tokenizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F69F15B22C7E2B2600DB8623 /* MLX-ServerUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MLX-ServerUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F69F15B52C7E2B2600DB8623 /* MLX_ServerUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLX_ServerUIApp.swift; sourceTree = "<group>"; };
+		F69F15B72C7E2B2600DB8623 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F69F15B92C7E2B2700DB8623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F69F15BC2C7E2B2700DB8623 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F69F15BE2C7E2B2700DB8623 /* MLX_ServerUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MLX_ServerUI.entitlements; sourceTree = "<group>"; };
+		F69F15CA2C7E2B7A00DB8623 /* RouteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteService.swift; sourceTree = "<group>"; };
+		F69F15CC2C7E2D8400DB8623 /* NetworkRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRoute.swift; sourceTree = "<group>"; };
+		F69F15CE2C7E2D9C00DB8623 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F69F15D02C7E2DAA00DB8623 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F69F15D22C7E2F1000DB8623 /* LLMResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMResponse.swift; sourceTree = "<group>"; };
+		F69F15D42C7E2F6F00DB8623 /* LLMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMService.swift; sourceTree = "<group>"; };
+		F69F15D62C7E2F9B00DB8623 /* LLMManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMManager.swift; sourceTree = "<group>"; };
+		F69F15DB2C7E303400DB8623 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F69F15DD2C7E466E00DB8623 /* LLMStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMStream.swift; sourceTree = "<group>"; };
+		F69F16012C7ED79200DB8623 /* LLama.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLama.swift; sourceTree = "<group>"; };
+		F69F16032C7ED7C200DB8623 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F69F16052C7ED7F600DB8623 /* LLMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMModel.swift; sourceTree = "<group>"; };
+		F69F160A2C7ED8A900DB8623 /* Lora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lora.swift; sourceTree = "<group>"; };
+		F69F16282C7ED9F900DB8623 /* LLMEvalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMEvalViewModel.swift; sourceTree = "<group>"; };
+		F69F162B2C7EDA7000DB8623 /* LLMEvalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMEvalView.swift; sourceTree = "<group>"; };
+		F69F162D2C7EDA9C00DB8623 /* models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
+		F69F162F2C7EDABA00DB8623 /* Evaluate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluate.swift; sourceTree = "<group>"; };
+		F69F16312C7EDBBD00DB8623 /* Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Load.swift; sourceTree = "<group>"; };
+		F69F16332C7EDBD300DB8623 /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F69F15AF2C7E2B2600DB8623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69F16232C7ED97A00DB8623 /* MLXOptimizers in Frameworks */,
+				F69F15FC2C7ED5B000DB8623 /* generate-manual in Frameworks */,
+				F69F161F2C7ED97A00DB8623 /* MLXLinalg in Frameworks */,
+				F69F16252C7ED97A00DB8623 /* MLXRandom in Frameworks */,
+				F69F15FA2C7ED5B000DB8623 /* ArgumentParser in Frameworks */,
+				F69F16212C7ED97A00DB8623 /* MLXNN in Frameworks */,
+				F69F16092C7ED82000DB8623 /* Transformers in Frameworks */,
+				F69F16192C7ED97A00DB8623 /* MLX in Frameworks */,
+				F69F161D2C7ED97A00DB8623 /* MLXFast in Frameworks */,
+				F69F15FF2C7ED5F500DB8623 /* MarkdownUI in Frameworks */,
+				F69F161B2C7ED97A00DB8623 /* MLXFFT in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F69F15A92C7E2B2600DB8623 = {
+			isa = PBXGroup;
+			children = (
+				F69F15B42C7E2B2600DB8623 /* MLX-ServerUI */,
+				F69F15B32C7E2B2600DB8623 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F69F15B32C7E2B2600DB8623 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F69F15B22C7E2B2600DB8623 /* MLX-ServerUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F69F15B42C7E2B2600DB8623 /* MLX-ServerUI */ = {
+			isa = PBXGroup;
+			children = (
+				F69F15C72C7E2B4700DB8623 /* Model */,
+				F69F15C92C7E2B5500DB8623 /* Module */,
+				F69F15C82C7E2B4A00DB8623 /* Manager */,
+				F69F15C62C7E2B4200DB8623 /* Service */,
+				F69F15C52C7E2B3400DB8623 /* Resource */,
+				F69F15C42C7E2B3000DB8623 /* App */,
+				F69F15BE2C7E2B2700DB8623 /* MLX_ServerUI.entitlements */,
+				F69F15BB2C7E2B2700DB8623 /* Preview Content */,
+			);
+			path = "MLX-ServerUI";
+			sourceTree = "<group>";
+		};
+		F69F15BB2C7E2B2700DB8623 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F69F15BC2C7E2B2700DB8623 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F69F15C42C7E2B3000DB8623 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F69F15B52C7E2B2600DB8623 /* MLX_ServerUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F69F15C52C7E2B3400DB8623 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F69F15B92C7E2B2700DB8623 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F69F15C62C7E2B4200DB8623 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F69F15CA2C7E2B7A00DB8623 /* RouteService.swift */,
+				F69F15CE2C7E2D9C00DB8623 /* NetworkService.swift */,
+				F69F15D42C7E2F6F00DB8623 /* LLMService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F69F15C72C7E2B4700DB8623 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F69F16352C7EFB3D00DB8623 /* LLM */,
+				F69F15D22C7E2F1000DB8623 /* LLMResponse.swift */,
+				F69F15DD2C7E466E00DB8623 /* LLMStream.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F69F15C82C7E2B4A00DB8623 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F69F15CC2C7E2D8400DB8623 /* NetworkRoute.swift */,
+				F69F15D02C7E2DAA00DB8623 /* NetworkManager.swift */,
+				F69F15D62C7E2F9B00DB8623 /* LLMManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F69F15C92C7E2B5500DB8623 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				F69F16262C7ED9E500DB8623 /* LLMEval */,
+				F69F15D82C7E301C00DB8623 /* MainView */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		F69F15D82C7E301C00DB8623 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				F69F15DA2C7E302700DB8623 /* ViewModel */,
+				F69F15D92C7E302400DB8623 /* View */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		F69F15D92C7E302400DB8623 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F69F15B72C7E2B2600DB8623 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F69F15DA2C7E302700DB8623 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F69F15DB2C7E303400DB8623 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F69F16262C7ED9E500DB8623 /* LLMEval */ = {
+			isa = PBXGroup;
+			children = (
+				F69F162A2C7EDA6700DB8623 /* View */,
+				F69F16272C7ED9EB00DB8623 /* ViewModel */,
+			);
+			path = LLMEval;
+			sourceTree = "<group>";
+		};
+		F69F16272C7ED9EB00DB8623 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F69F16282C7ED9F900DB8623 /* LLMEvalViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F69F162A2C7EDA6700DB8623 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F69F162B2C7EDA7000DB8623 /* LLMEvalView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F69F16352C7EFB3D00DB8623 /* LLM */ = {
+			isa = PBXGroup;
+			children = (
+				F69F16332C7EDBD300DB8623 /* Tokenizer.swift */,
+				F69F16312C7EDBBD00DB8623 /* Load.swift */,
+				F69F162F2C7EDABA00DB8623 /* Evaluate.swift */,
+				F69F162D2C7EDA9C00DB8623 /* models.swift */,
+				F69F16032C7ED7C200DB8623 /* Config.swift */,
+				F69F160A2C7ED8A900DB8623 /* Lora.swift */,
+				F69F16052C7ED7F600DB8623 /* LLMModel.swift */,
+				F69F16012C7ED79200DB8623 /* LLama.swift */,
+			);
+			path = LLM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F69F15B12C7E2B2600DB8623 /* MLX-ServerUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F69F15C12C7E2B2700DB8623 /* Build configuration list for PBXNativeTarget "MLX-ServerUI" */;
+			buildPhases = (
+				F69F15AE2C7E2B2600DB8623 /* Sources */,
+				F69F15AF2C7E2B2600DB8623 /* Frameworks */,
+				F69F15B02C7E2B2600DB8623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MLX-ServerUI";
+			packageProductDependencies = (
+				F69F15F92C7ED5B000DB8623 /* ArgumentParser */,
+				F69F15FB2C7ED5B000DB8623 /* generate-manual */,
+				F69F15FE2C7ED5F500DB8623 /* MarkdownUI */,
+				F69F16082C7ED82000DB8623 /* Transformers */,
+				F69F16182C7ED97A00DB8623 /* MLX */,
+				F69F161A2C7ED97A00DB8623 /* MLXFFT */,
+				F69F161C2C7ED97A00DB8623 /* MLXFast */,
+				F69F161E2C7ED97A00DB8623 /* MLXLinalg */,
+				F69F16202C7ED97A00DB8623 /* MLXNN */,
+				F69F16222C7ED97A00DB8623 /* MLXOptimizers */,
+				F69F16242C7ED97A00DB8623 /* MLXRandom */,
+			);
+			productName = "MLX-ServerUI";
+			productReference = F69F15B22C7E2B2600DB8623 /* MLX-ServerUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F69F15AA2C7E2B2600DB8623 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F69F15B12C7E2B2600DB8623 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = F69F15AD2C7E2B2600DB8623 /* Build configuration list for PBXProject "MLX-ServerUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F69F15A92C7E2B2600DB8623;
+			packageReferences = (
+				F69F15F82C7ED5B000DB8623 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				F69F15FD2C7ED5F500DB8623 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				F69F16072C7ED82000DB8623 /* XCRemoteSwiftPackageReference "swift-transformers" */,
+				F69F16172C7ED97A00DB8623 /* XCRemoteSwiftPackageReference "mlx-swift" */,
+			);
+			productRefGroup = F69F15B32C7E2B2600DB8623 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F69F15B12C7E2B2600DB8623 /* MLX-ServerUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F69F15B02C7E2B2600DB8623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69F15BD2C7E2B2700DB8623 /* Preview Assets.xcassets in Resources */,
+				F69F15BA2C7E2B2700DB8623 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F69F15AE2C7E2B2600DB8623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69F160B2C7ED8A900DB8623 /* Lora.swift in Sources */,
+				F69F16322C7EDBBD00DB8623 /* Load.swift in Sources */,
+				F69F162E2C7EDA9C00DB8623 /* models.swift in Sources */,
+				F69F162C2C7EDA7000DB8623 /* LLMEvalView.swift in Sources */,
+				F69F15D12C7E2DAA00DB8623 /* NetworkManager.swift in Sources */,
+				F69F16022C7ED79200DB8623 /* LLama.swift in Sources */,
+				F69F15D52C7E2F6F00DB8623 /* LLMService.swift in Sources */,
+				F69F15CF2C7E2D9C00DB8623 /* NetworkService.swift in Sources */,
+				F69F15DE2C7E466E00DB8623 /* LLMStream.swift in Sources */,
+				F69F16302C7EDABA00DB8623 /* Evaluate.swift in Sources */,
+				F69F16342C7EDBD300DB8623 /* Tokenizer.swift in Sources */,
+				F69F16062C7ED7F600DB8623 /* LLMModel.swift in Sources */,
+				F69F15D72C7E2F9B00DB8623 /* LLMManager.swift in Sources */,
+				F69F16042C7ED7C200DB8623 /* Config.swift in Sources */,
+				F69F15B82C7E2B2600DB8623 /* ContentView.swift in Sources */,
+				F69F16292C7ED9F900DB8623 /* LLMEvalViewModel.swift in Sources */,
+				F69F15DC2C7E303400DB8623 /* MainViewModel.swift in Sources */,
+				F69F15B62C7E2B2600DB8623 /* MLX_ServerUIApp.swift in Sources */,
+				F69F15CD2C7E2D8400DB8623 /* NetworkRoute.swift in Sources */,
+				F69F15D32C7E2F1000DB8623 /* LLMResponse.swift in Sources */,
+				F69F15CB2C7E2B7A00DB8623 /* RouteService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F69F15BF2C7E2B2700DB8623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F69F15C02C7E2B2700DB8623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F69F15C22C7E2B2700DB8623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MLX-ServerUI/MLX_ServerUI.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MLX-ServerUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 52RX5R54N7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tafa.MLX-ServerUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F69F15C32C7E2B2700DB8623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MLX-ServerUI/MLX_ServerUI.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MLX-ServerUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 52RX5R54N7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tafa.MLX-ServerUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F69F15AD2C7E2B2600DB8623 /* Build configuration list for PBXProject "MLX-ServerUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69F15BF2C7E2B2700DB8623 /* Debug */,
+				F69F15C02C7E2B2700DB8623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F69F15C12C7E2B2700DB8623 /* Build configuration list for PBXNativeTarget "MLX-ServerUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69F15C22C7E2B2700DB8623 /* Debug */,
+				F69F15C32C7E2B2700DB8623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F69F15F82C7ED5B000DB8623 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+		F69F15FD2C7ED5F500DB8623 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+		F69F16072C7ED82000DB8623 /* XCRemoteSwiftPackageReference "swift-transformers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huggingface/swift-transformers";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.9;
+			};
+		};
+		F69F16172C7ED97A00DB8623 /* XCRemoteSwiftPackageReference "mlx-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.16.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F69F15F92C7ED5B000DB8623 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69F15F82C7ED5B000DB8623 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		F69F15FB2C7ED5B000DB8623 /* generate-manual */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69F15F82C7ED5B000DB8623 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = "generate-manual";
+		};
+		F69F15FE2C7ED5F500DB8623 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69F15FD2C7ED5F500DB8623 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+		F69F16082C7ED82000DB8623 /* Transformers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69F16072C7ED82000DB8623 /* XCRemoteSwiftPackageReference "swift-transformers" */;
+			productName = Transformers;
+		};
+		F69F16182C7ED97A00DB8623 /* MLX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69F16172C7ED97A00DB8623 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLX;
+		};
+		F69F161A2C7ED97A00DB8623 /* MLXFFT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69F16172C7ED97A00DB8623 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXFFT;
+		};
+		F69F161C2C7ED97A00DB8623 /* MLXFast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69F16172C7ED97A00DB8623 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXFast;
+		};
+		F69F161E2C7ED97A00DB8623 /* MLXLinalg */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69F16172C7ED97A00DB8623 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXLinalg;
+		};
+		F69F16202C7ED97A00DB8623 /* MLXNN */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69F16172C7ED97A00DB8623 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXNN;
+		};
+		F69F16222C7ED97A00DB8623 /* MLXOptimizers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69F16172C7ED97A00DB8623 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXOptimizers;
+		};
+		F69F16242C7ED97A00DB8623 /* MLXRandom */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69F16172C7ED97A00DB8623 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXRandom;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F69F15AA2C7E2B2600DB8623 /* Project object */;
+}
