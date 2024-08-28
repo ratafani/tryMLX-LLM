@@ -12,7 +12,7 @@ struct MLX_ServerUIApp: App {
     var body: some Scene {
         WindowGroup {
             LLMEvalView()
-                .environment(DeviceStat())
+                .environment(DeviceStatViewModel())
         }
     }
 }

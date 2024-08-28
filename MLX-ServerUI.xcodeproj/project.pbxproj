@@ -41,6 +41,7 @@
 		F69F16302C7EDABA00DB8623 /* Evaluate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F162F2C7EDABA00DB8623 /* Evaluate.swift */; };
 		F69F16322C7EDBBD00DB8623 /* Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F16312C7EDBBD00DB8623 /* Load.swift */; };
 		F69F16342C7EDBD300DB8623 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F16332C7EDBD300DB8623 /* Tokenizer.swift */; };
+		F69F16372C7F73FB00DB8623 /* DeviceStatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F16362C7F73FB00DB8623 /* DeviceStatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		F69F162F2C7EDABA00DB8623 /* Evaluate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluate.swift; sourceTree = "<group>"; };
 		F69F16312C7EDBBD00DB8623 /* Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Load.swift; sourceTree = "<group>"; };
 		F69F16332C7EDBD300DB8623 /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		F69F16362C7F73FB00DB8623 /* DeviceStatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				F69F16282C7ED9F900DB8623 /* LLMEvalViewModel.swift */,
+				F69F16362C7F73FB00DB8623 /* DeviceStatViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F69F16372C7F73FB00DB8623 /* DeviceStatViewModel.swift in Sources */,
 				F69F160B2C7ED8A900DB8623 /* Lora.swift in Sources */,
 				F69F16322C7EDBBD00DB8623 /* Load.swift in Sources */,
 				F69F162E2C7EDA9C00DB8623 /* models.swift in Sources */,
