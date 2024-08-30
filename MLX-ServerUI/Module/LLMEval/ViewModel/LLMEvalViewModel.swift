@@ -118,7 +118,9 @@ class LLMEvalViewModel:ObservableObject {
                             return .stop
                         }else{
                             Task { @MainActor in
-                                self.output = text
+                                var parsed = text.replacingOccurrences(of: "IENDMYTURNANDTHISISBREAKPOINT", with: "")
+                                parsed = parsed.replacingOccurrences(of: "User:", with: "")
+                                self.output = parsed
                             }
                         }
                         
@@ -131,7 +133,14 @@ class LLMEvalViewModel:ObservableObject {
                     }
                 }
             }
-            let parsed = result.output.replacingOccurrences(of: "IENDMYTURNANDTHISISBREAKPOINT", with: "")
+//            let parsed = result.output.replacingOccurrences(of: "IENDMYTURNANDTHISISBREAKPOINT", with: "")
+            var parsed = result.output.replacingOccurrences(of: "IENDMYTURNANDTHISISBREAKPOINT", with: "")
+            parsed = parsed.trimmingCharacters(in: .whitespacesAndNewlines)
+            if let range = parsed.range(of: "User:") {
+                let modifiedString = String(parsed[..<range.lowerBound])
+                print(modifiedString)
+                parsed = modifiedString
+            }
             // update the text if needed, e.g. we haven't displayed because of displayEveryNTokens
             if parsed != self.output {
                 self.output = parsed
